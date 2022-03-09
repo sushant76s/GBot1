@@ -11,7 +11,7 @@ module.exports = (app) => {
       body: "Thanks for opening this issue!",
     });
     const assignee = context.issue({
-      assignees: "pushpendra-91",
+      assignees: "susverma",
     });
     context.octokit.issues.addAssignees(assignee);
     return context.octokit.issues.createComment(issueComment);
